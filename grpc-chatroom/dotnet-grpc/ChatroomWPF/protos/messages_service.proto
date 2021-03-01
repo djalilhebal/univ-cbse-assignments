@@ -1,0 +1,50 @@
+﻿syntax = "proto3";
+
+service MessagesService {
+
+	/**
+	 * Add message.
+	 *
+	 * NOTE: As a crude form of authentication, when sending a new message,
+	 * the Author attribute MUST be the Author's Id (secret) instead of their nick (public).
+	 */
+	rpc SendMessage (Message) returns (SendMessageResponse);
+
+	/**
+	 * Return all messages.
+	 */
+	rpc GetMessages (EmptyRequest) returns (GetMessagesResponse);
+
+	/**
+	 * Return all messages after `targetMessage`.
+	 *
+	 * Like, if we have a list `{A, B, C, D, E}` and we call `GetMessagesAfter(C)`, it will return `{D, E}`.
+	 * `GetMessagesAfter(E)` would send an empty list `{}`.
+	 */
+	rpc GetMessagesAfter (Message) returns (GetMessagesResponse);
+
+	/**
+	 * Subscribe for new messages.
+	 */
+	rpc GetNewMessages(EmptyRequest) returns (stream Message);
+
+}
+
+message GetMessagesResponse {
+	repeated Message messages = 1;
+}
+
+message SendMessageResponse {
+	bool success = 1;
+}
+
+message EmptyRequest {
+	// NOTHING.
+}
+
+message Message {
+	string id = 1;
+	string author = 2;
+	string content = 3;
+	string timestamp = 4;
+}

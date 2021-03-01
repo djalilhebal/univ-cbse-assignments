@@ -1,0 +1,32 @@
+﻿syntax = "proto3";
+
+service AccountsService {
+
+  rpc GetAccount (AccountRequest) returns (Account);
+
+  // rpc UpdatePassword(UpdatePasswordRequest) returns (UpdatePasswordResponse);
+
+}
+
+message AccountRequest {
+	string nickname = 1;
+	string password = 2;
+}
+
+message Account {
+	string id = 1;
+	string nickname = 2;
+}
+
+// ---
+
+/*
+message UpdatePasswordRequest {
+	string id = 1;
+	string password = 2;
+}
+
+message UpdatePasswordResponse {
+	bool success = 1;
+}
+*/

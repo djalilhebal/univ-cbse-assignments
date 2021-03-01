@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChatroomServer", "ChatroomServer\ChatroomServer.csproj", "{10E16160-3FA9-4839-90CA-9393AFD13D50}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatroomWPF", "ChatroomWPF\ChatroomWPF.csproj", "{B200819F-28CE-4F4D-BDC1-9FC0FC473FF7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{10E16160-3FA9-4839-90CA-9393AFD13D50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10E16160-3FA9-4839-90CA-9393AFD13D50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10E16160-3FA9-4839-90CA-9393AFD13D50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10E16160-3FA9-4839-90CA-9393AFD13D50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B200819F-28CE-4F4D-BDC1-9FC0FC473FF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B200819F-28CE-4F4D-BDC1-9FC0FC473FF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B200819F-28CE-4F4D-BDC1-9FC0FC473FF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B200819F-28CE-4F4D-BDC1-9FC0FC473FF7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3CA7DA13-4E60-41E9-AC5E-18A2EC4CE6FA}
+	EndGlobalSection
+EndGlobal

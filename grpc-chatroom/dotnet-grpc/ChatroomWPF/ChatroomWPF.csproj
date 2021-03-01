@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Google.Protobuf" Version="3.15.3" />
+    <PackageReference Include="Grpc.Core" Version="2.36.0" />
+    <PackageReference Include="Grpc.Tools" Version="2.36.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+
+    <!--
+    <Protobuf Include="protos\accounts_service.proto" GrpcServices="Client" />
+    <Protobuf Include="protos\messages_service.proto" GrpcServices="Client" />
+    -->
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="protos\accounts_service.proto" GrpcServices="Client" />
+    <None Update="protos\messages_service.proto" GrpcServices="Client" />
+  </ItemGroup>
+
+</Project>
