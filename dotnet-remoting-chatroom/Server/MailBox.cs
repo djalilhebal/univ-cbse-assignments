@@ -97,12 +97,12 @@ namespace Server
         // ---
 
         /**
-         * Returns a string a la Java's <c>Object::toString</c>.
+         * Returns a string a la Java's `Object::toString`.
          */
         override public string ToString()
         {
-            // Java's toString: `getClass().getName() + '@' + Integer.toHexString(hashCode())`
-            // Or: `String.format("%s@%X", getClass().getName(), hashCode())`
+            // Java's toString is defined as `getClass().getName() + '@' + Integer.toHexString(hashCode())`
+            // or: `String.format("%s@%X", getClass().getName(), hashCode())`.
             return String.Format("{0}@{1:X}", this.GetType().FullName, this.GetHashCode());
         }
 

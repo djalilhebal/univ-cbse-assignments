@@ -14,7 +14,7 @@ namespace ClientReceiver
             {
                 TcpChannel chl = new TcpChannel();
                 ChannelServices.RegisterChannel(chl, false);
-                Console.WriteLine("[Receiver] Resigstered the channel");
+                Console.WriteLine("[Receiver] Registered the channel");
 
                 // For the 'Builder' version:
                 //   - Replace all references to "IMailBox" with "IMailBoxBuilder"

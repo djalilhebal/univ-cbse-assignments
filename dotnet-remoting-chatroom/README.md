@@ -1,19 +1,18 @@
-# POC TP3: MailBox
-.NET Remoting assignment.
-
-By
-- @WanisRamdani
-- @DjalilHebal
+# .NET Remoting Chatroom
+.NET Remoting assignment. "POC TP3: AppliMailbox".
 
 ![Latest screenshot](./screenshots/screenshot-2021-02-19--Singleton.png)
 
-## Question (paraphrased)
 
-MailBox is a distributed application. It consists of the following components: **Server**, **Sender** Client, and **Receiver** Client.
+## Assignment Text (Paraphrased)
+
+_MailBox_ is a distributed application. It consists of the following components: **Server**, **Sender** Client, and **Receiver** Client.
 
 - Implement these components as console applications.
-- Use a `private` `ArrayList` to store messages in the Server.
-- Implements the `IMailBox` interface in the Server component and export it on Port `1234`.
+
+- Use a `private` `ArrayList` to store messages on the server side.
+
+- Implement the `IMailBox` interface in the Server component and export it on Port `1234`.
 ```cs
 public interface IMailBox
 {
@@ -37,9 +36,9 @@ ___What do you remark?___
 After (re)building the _Solution_, execute the the included batch file (`POC-TP3-start-scenario.bat`).  
 It does the following:
 
-- **Step 1:** Starts a Server in a separate window (_green_).
+- **Step 1:** Starts a Server instance in a separate window (_green_).
 
-- **Step 2 (pt. 1):** Then starts a Sender instance that sends two messages (with a small delay between them):
+- **Step 2 (pt. 1):** Then starts a Sender instance that sends two messages (with a short delay between them):
   * "Hiieeeeeeeee"
   * "What's up?"
 
@@ -48,13 +47,12 @@ It does the following:
 
 - **Step 3:** Finally, it starts the Receiver in a new window (_blue_).
 
----
 
 ## Remarks
 
 ### Singleton version
 Only one `MailBox` object\* is created (activated by the server) for all clients.  
-The mailBox' state/data is shared by the all clients and that's why the _Receiver_ can read all messages sent by the Senders.
+The _MailBox_' state is shared by the all clients, and that's why the _Receiver_ can read all messages sent by the Senders.
 
 (\* Object ID: `@2D2B...`.)
 
@@ -74,7 +72,7 @@ A new `MailBox` object is created (activated by the client) each time a client e
 
 Instances of `MailBox` obtained using the builder can be shared by the same client.  
 In our execution scenario, we only needed 3 instances\* of MailBox for our three clients.  
-For example, the first instance of Sender created only on object (`@30E9...`) and used it to send two messages (i.e. two calls).  
+For example, the first instance of Sender created only one object (`@30E9...`) and used it to send two messages (i.e. two calls).  
 
 Clients don't use the same object, and this is why the Receiver finds an empty list at the end.
 
@@ -88,8 +86,12 @@ Clients don't use the same object, and this is why the Receiver finds an empty l
 
 - **Why not automatically fetch new messages**
   * We could make the Receiver *poll* the Server for new messages every X seconds or, better, implement the Observer pattern, but nah...
-  * My introduction of `GetMessagesAfter(Message)`, "message bubbles", and logging by themselves are a little overkill for this simple project.
+  * My introduction of `GetMessagesAfter(Message)`, "message bubbles" (ASCII art?), and logging by themselves are overkill for this simple project.
 
----
+- No measures have been put into place to handle security, authorization, or authentication.
+  This thing is like 4Chan--anonymous, unrestricted, and full of shit.
 
-END.
+
+## License
+
+By @DjalilHebal and @WanisRamdani, under CC BY 3.0.

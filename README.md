@@ -24,10 +24,10 @@ The thing I'm proud of is the `VitalSignsRandomizer`, debugging the stub type/cl
 
 ## .NET Remoting: Chatroom
 
-[`dotnet-mailbox/`](./dotnet-mailbox).
+[`dotnet-remoting-chatroom/`](./dotnet-remoting-chatroom).
 - I'm kinda proud of the `start-scenario.bat` script...
 
-![](dotnet-mailbox/screenshots/screenshot-2021-02-19--Singleton.png)
+![](dotnet-remoting-chatroom/screenshots/screenshot-2021-02-19--Singleton.png)
 
 ---
 
@@ -55,4 +55,4 @@ The thing I'm proud of is the `VitalSignsRandomizer`, debugging the stub type/cl
 
 
 ## License
-CC BY 3.0 unless stated otherwise.
+CC BY 3.0 unless otherwise stated.

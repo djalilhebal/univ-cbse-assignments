@@ -1,6 +1,6 @@
 ECHO OFF
 
-REM CD to\the\root\of\the\solution\AppMailBox
+REM CD to\the\root\of\the\solution\AppiMailBox
 SET server=Server\bin\Debug\Server.exe
 SET sender=ClientSender\bin\Debug\ClientSender.exe
 SET receiver=ClientReceiver\bin\Debug\ClientReceiver.exe
@@ -47,7 +47,7 @@ ECHO.
   PING -n 4 127.0.0.1 > nul
 ) | %sender%
 
-REM A third Sender, for manual testing Receiver's "refresh" functionality
+REM Another Sender, to manually test the Receiver's "refresh" functionality
 START "Sender (for manual testing)" %sender%
 
 ECHO.
