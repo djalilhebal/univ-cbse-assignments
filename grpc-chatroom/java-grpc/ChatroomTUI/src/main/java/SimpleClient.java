@@ -9,7 +9,7 @@ import java.util.List;
  */
 public class SimpleClient {
 
-    static final String SERVER_ADDRESS = "localhost"; // "192.168.43.127";
+    static final String SERVER_ADDRESS = "192.168.1.39"; // "localhost"; // "192.168.43.127";
 
     static final int ACCOUNTS_PORT = 10301; // 'g'01
     private ManagedChannel accountsChannel;

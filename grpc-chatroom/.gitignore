@@ -1,0 +1,17 @@
+# User-specific files
+*.suo
+
+# JetBrains Rider stuff
+# XXX: Maybe include it?
+dotnet-grpc/.idea/
+
+dotnet-grpc/packages/
+
+# bin and obj folders from .NET projects (ChatroomServer and ChatroomWPF)
+dotnet-grpc/ChatroomWPF/bin/
+dotnet-grpc/ChatroomWPF/obj/
+dotnet-grpc/ChatroomServer/bin/
+dotnet-grpc/ChatroomServer/obj/
+
+java-grpc/ChatroomTUI/target/
+java-grpc/ChatroomTUI/src/main/proto/protoc-gen-grpc-java-1.35.0-linux-x86_64.exe

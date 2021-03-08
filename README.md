@@ -36,7 +36,7 @@ The thing I'm proud of is the `VitalSignsRandomizer`, debugging the stub type/cl
 [`grpc-chatroom/`](grpc-chatroom/).
 
 - It's like ".NET Remoting Chatroom," but better and cross-platform.
-- It implements a pubsub kinda thing using gRPC server streaming.
+- It implements something like the Observer pattern using gRPC server streaming.
 
 ![Server and clients running Windows](./grpc-chatroom/dotnet-grpc/screenshot-2021-02-28--dotnet-windows.png)
 ![Server and client Running on Linux/Ubuntu](./grpc-chatroom/java-grpc/ChatroomTUI/screenshot-2021-02-26--java-dotnet-ubuntu.png)

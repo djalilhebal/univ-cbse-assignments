@@ -15,17 +15,17 @@ public class Main {
             simpleClient = new SimpleClient();
             simpleClient.setup();
 
-            /*
+
             // To test works `getNewMessages()`:
             new Thread(() -> {
                 // Kinda like `observable.onNext(..);`
                 simpleClient.getNewMessages().forEachRemaining(newMessage -> {
-                    KaiConsole.log(TAG, "Received new message: " + newMessage);
+                    KaiConsole.log(TAG, "[NEW] " + newMessage);
                 });
             }).start();
-            */
 
-            test();
+
+            // test();
 
             user();
         } catch (Exception ignoredException) {

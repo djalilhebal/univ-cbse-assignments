@@ -7,7 +7,7 @@ namespace ChatroomServer
 {
     class Program
     {
-        const string SERVER_ADDRESS = "localhost"; //"192.168.43.127";
+        const string SERVER_ADDRESS = "192.168.1.39"; // "localhost"; //"192.168.43.127";
 
         // NOTE: We're using char 'g' (we could use 'G') as a port prefix. (g is for gRPC.)
         // int PORT_NUMBER_LOWER = 103_01 = int.Parse("10301") = int.Parse((int)'g' + "01");
