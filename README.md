@@ -16,9 +16,12 @@ CBSE\* assignments / <i lang="fr">Devoirs POC\*\*</i> / RMI / RPC
 
 ## Java RMI: Vitals Monitor
 
-"`SmartHospitalRMI`"
+[`java-rmi-vitals-monitor/`](./java-rmi-vitals-monitor/)
+- The `VitalSignsRandomizer` thing is kinda cool, if I say so myself.
+- Rewriting/overriding the same console line ("erase characters")... ;-;
+- Inspecting the stub type/class (`stubObject.getClass().getCanonicalName())`).
 
-The thing I'm proud of is the `VitalSignsRandomizer`, debugging the stub type/class, and rewriting the same console line ("erase characters") ;-;
+![](./java-rmi-vitals-monitor/screenshots/2021-01-23_Medecin-SoukAhras.png)
 
 ---
 
